@@ -15,10 +15,10 @@
     <cameras>
       <camera>
         <cameraSize>
-          16 9 
+          3.74953 3.62177 
         </cameraSize>
         <cameraRes>
-          1920 1080 
+          450 435 
         </cameraRes>
         <cameraXPrevalence>
           1 
@@ -31,10 +31,10 @@
     <outputs>
       <output name="main">
         <range>
-          0 -1 
+          5 47 
         </range>
         <step>
-          8 
+          5 
         </step>
         <shrink>
           1 
@@ -46,7 +46,7 @@
           24 
         </fps>
         <path>
-          "D:\\Graphic Other\\Opentool Data\\Animation\\.png"
+          "D:\\Graphic Other\\Opentool Data\\Animation\\zoroWalk.png"
         </path>
         <bpp>
           32 
@@ -126,7 +126,7 @@
         </output>
       <output name="preview">
         <range>
-          17 47 
+          5 47 
         </range>
         <step>
           1 
