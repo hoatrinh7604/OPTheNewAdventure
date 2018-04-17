@@ -31,7 +31,7 @@
     <outputs>
       <output name="main">
         <range>
-          192 204 
+          258 309 
         </range>
         <step>
           1 
@@ -46,7 +46,7 @@
           24 
         </fps>
         <path>
-          "D:\\Graphic Other\\Opentool Data\\Animation\\zoroDie.png"
+          "D:\\Graphic Other\\Opentool Data\\Animation\\luffyattack.png"
         </path>
         <bpp>
           32 
@@ -126,7 +126,7 @@
         </output>
       <output name="preview">
         <range>
-          192 204 
+          333 378 
         </range>
         <step>
           1 
