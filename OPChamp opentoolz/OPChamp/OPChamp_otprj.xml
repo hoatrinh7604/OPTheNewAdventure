@@ -15,7 +15,7 @@
     <cameras>
       <camera>
         <cameraSize>
-          3.74663 3.62144 
+          3.74373 3.62488 
         </cameraSize>
         <cameraRes>
           450 435 
@@ -31,7 +31,7 @@
     <outputs>
       <output name="main">
         <range>
-          222 249 
+          258 309 
         </range>
         <step>
           1 
@@ -46,7 +46,7 @@
           24 
         </fps>
         <path>
-          "D:\\Graphic Other\\Opentool Data\\Animation\\zoroNga.png"
+          "D:\\Graphic Other\\Opentool Data\\Animation\\luffyattack.png"
         </path>
         <bpp>
           32 
@@ -126,7 +126,7 @@
         </output>
       <output name="preview">
         <range>
-          0 252 
+          333 378 
         </range>
         <step>
           1 
