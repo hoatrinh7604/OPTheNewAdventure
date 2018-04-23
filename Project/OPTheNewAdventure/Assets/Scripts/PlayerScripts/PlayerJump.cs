@@ -21,6 +21,10 @@ public class PlayerJump : MonoBehaviour {
 
 	const string animGround = "Ground";
 	const string animDoubleJump = "DoubleJump";
+	const string animAttacking = "Attacking";
+
+	const string animJump = "Jump";
+	const string animDJump = "DJump";
 
 	// Use this for initialization
 	void Awake () {
@@ -30,31 +34,38 @@ public class PlayerJump : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		statePlayer = PlayerState.statePlayer;
-		anim.SetBool (animGround, grounded);
-		anim.SetBool (animDoubleJump, doubleJump);
-		setJump ();
+		
 	}
 
 	void FixedUpdate(){
-
-		if (Input.GetKeyDown (KeyCode.Space) && (statePlayer == 0) && (grounded || !doubleJump) ) {
+		statePlayer = PlayerState.statePlayer;
+		if (Input.GetKeyDown (KeyCode.Space) && (statePlayer == 0) && (grounded || !doubleJump)) {
 			grounded = false;
+			anim.SetBool (animGround, grounded);
 			r2.AddForce (Vector2.up * jumpForce);
 			if (!grounded && !doubleJump) {
 				doubleJump = true;
+				anim.SetBool (animDoubleJump, doubleJump);
 				r2.AddForce (Vector2.up * jumpForce * 0.5f);
+				anim.Play (animDJump);
+				anim.SetBool ("Attacking", false);
 			} else {
 				r2.AddForce (Vector2.up * jumpForce);
+				anim.Play (animJump);
+				anim.SetBool ("Attacking", false);
 			}
 		} 
-
+			
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
+		anim.SetBool (animGround, grounded);
+		setJump ();
+
 	}
 
 	void setJump(){
 		if (grounded) {
 			doubleJump = false;
+			anim.SetBool (animDoubleJump, doubleJump);
 		} 
 	}
 }

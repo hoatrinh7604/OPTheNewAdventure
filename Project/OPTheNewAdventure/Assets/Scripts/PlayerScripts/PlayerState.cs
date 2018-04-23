@@ -24,7 +24,7 @@ public class PlayerState : MonoBehaviour {
 	private Animator anim;
 	private Rigidbody2D r2;
 
-	//state of player: 0 = idel; 1 = hurt; 2 = knockdown; 3 = stand up
+	//state of player: 0 = idel; 1 = hurt; 2 = knockdown; 3 = stand up; 
 	public static int statePlayer = 0;
 
 	const string animHurt = "Hurt";

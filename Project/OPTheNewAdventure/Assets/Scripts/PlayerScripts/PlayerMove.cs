@@ -4,36 +4,62 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour {
 
-	public float moveSpeed;
-	public bool facingRight = true;
+	[SerializeField] float moveSpeed;
+
+	[SerializeField] bool facingRight = true;
+	[SerializeField] bool moving = false;
+
+	[SerializeField] float test;
+	[SerializeField] int idPlayer = 1;
 
 	private Animator anim;
+	private Rigidbody2D r2;
+	private Transform tran;
 
-	public bool moving = false;
+	// this val will get value in statePlayer in PlayerState Class
+	private static int statePlayer;
 
-	public float test;
+	const string animMoving = "Moving";
+	const string animGround = "Ground";
+
+	const string moveValueHorizontal = "Horizontal";
+	const string movePlayer2 = "Player2";
+
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		anim = GetComponent<Animator> ();
+		r2 = GetComponent<Rigidbody2D> ();
+		tran = transform;
+	}
+
+	void Update(){
+		statePlayer = PlayerState.statePlayer;
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		if (Input.GetAxisRaw ("Horizontal") != 0f) {
-			test = Input.GetAxisRaw ("Horizontal");
-			bool temp = (Input.GetAxisRaw ("Horizontal") > 0f) ? true : false;
+
+		float moveValue = (idPlayer == 1) ? Input.GetAxisRaw (moveValueHorizontal) : Input.GetAxisRaw(movePlayer2);
+		if (moveValue != 0f && (statePlayer == 0)) {
+			bool temp = (moveValue > 0f) ? true : false;
 			if (facingRight != temp) {
 				facingRight = temp;
 				split ();
 			}
 			moving = true;
-			transform.Translate (new Vector3 (Input.GetAxisRaw ("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
+			//r2.AddForce(new Vector2 (test * moveSpeed, 0));
+			r2.velocity = new Vector2(test * moveSpeed, r2.velocity.y);
+			anim.SetBool ("Attacking", false);
 		} else {
 			moving = false;
 		}
-		test = Input.GetAxisRaw ("Horizontal");
-		anim.SetBool ("Moving", moving);
 
+		test = moveValue;
+		anim.SetBool (animMoving, moving);
+
+		if (anim.GetBool (animGround)) {
+			r2.velocity = new Vector2 (r2.velocity.x * 0.7f, r2.velocity.y);
+		} 
 		/*
 		float move = Input.GetAxis ("Horizontal");
 		test = move;
@@ -55,6 +81,7 @@ public class PlayerMove : MonoBehaviour {
 	public void split()
 	{
 		//facingRight = !facingRight;
-		transform.localScale = new Vector3(transform.localScale.x *-1, transform.localScale.y, transform.localScale.z);
+		tran.localScale = new Vector3(tran.localScale.x *-1, tran.localScale.y, tran.localScale.z);
 	}
+
 }
