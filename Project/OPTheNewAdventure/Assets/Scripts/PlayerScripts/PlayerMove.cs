@@ -9,6 +9,9 @@ public class PlayerMove : MonoBehaviour {
 	[SerializeField] bool facingRight = true;
 	[SerializeField] bool moving = false;
 
+	[SerializeField] float timeReserveCross;
+	[SerializeField] float forceCross;
+
 	[SerializeField] float test;
 	[SerializeField] int idPlayer = 1;
 
@@ -38,43 +41,44 @@ public class PlayerMove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+		timeReserveCross -= Time.deltaTime;
 
 		float moveValue = (idPlayer == 1) ? Input.GetAxisRaw (moveValueHorizontal) : Input.GetAxisRaw(movePlayer2);
-		if (moveValue != 0f && (statePlayer == 0)) {
+		if (moveValue != 0f && (PlayerState.frozenPlayer < 0)) {
 			bool temp = (moveValue > 0f) ? true : false;
 			if (facingRight != temp) {
 				facingRight = temp;
 				split ();
 			}
-			moving = true;
-			//r2.AddForce(new Vector2 (test * moveSpeed, 0));
+
+			if (timeReserveCross < 0.15f) {
+				moving = true;
+			}
 			r2.velocity = new Vector2(test * moveSpeed, r2.velocity.y);
 			anim.SetBool ("Attacking", false);
+			GetComponent<ComboAttack> ().resetCombo ();// reset combo attack when moving
 		} else {
 			moving = false;
+		}
+
+		//function check to cross
+		if (Input.GetKeyDown (KeyCode.H) && timeReserveCross < 0 && PlayerState.frozenPlayer < 0) {
+			timeReserveCross = 0.4f;
+			int way = facingRight ? 1 : -1;
+			//r2.AddForce (new Vector2 (8000*way, 0));
+			if (moving) {
+				r2.velocity = new Vector2 (r2.velocity.x + 750 * way, r2.velocity.y);
+			} else {
+				r2.velocity = new Vector2 (r2.velocity.x + forceCross * way, r2.velocity.y);
+			}
+			anim.Play ("Cross");
 		}
 
 		test = moveValue;
 		anim.SetBool (animMoving, moving);
 
-		if (anim.GetBool (animGround)) {
-			r2.velocity = new Vector2 (r2.velocity.x * 0.7f, r2.velocity.y);
-		} 
-		/*
-		float move = Input.GetAxis ("Horizontal");
-		test = move;
-		GetComponent<Rigidbody2D> ().velocity = new Vector2 (move * moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
-
-		if (move > 0) {
-			anim.SetBool ("Moving", moving);
-		}
-
-		if (move > 0 && !facingRight) {
-			split ();
-		}else if(move < 0 && facingRight){
-			split ();
-		}
-		*/
+		// tao ma sat
+		r2.velocity = new Vector2 (r2.velocity.x * 0.7f, r2.velocity.y);
 
 	}
 
@@ -82,6 +86,14 @@ public class PlayerMove : MonoBehaviour {
 	{
 		//facingRight = !facingRight;
 		tran.localScale = new Vector3(tran.localScale.x *-1, tran.localScale.y, tran.localScale.z);
+	}
+
+	public bool getFacingRight(){
+		return facingRight;
+	}
+
+	public bool getMoving(){
+		return moving;
 	}
 
 }

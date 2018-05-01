@@ -18,7 +18,8 @@ public class CharacterInfo : MonoBehaviour {
 	public float[] attackDamage = {0, 0, 0, 0};
 	public float[] knockAttack = {0, 0, 0, 0};
 
-	public float[] skillDamage = { 0, 0 };
+	public float[] skillDamage = {0, 0 };
+	public float[] timeReserveSkill = { 0, 0 };
 	public float[,] knockSkill = {{0, 0}, {0, 0}};
 
 	public float jumpAttackDamage = 0;
@@ -30,15 +31,15 @@ public class CharacterInfo : MonoBehaviour {
 	}
 
 	// This function to get all info of a character follow its ID (Database)
-	public CharacterInfo getInfo(int iDCharacter){
+	// Du lieu luu trong database su kien la mot mang 2 chieu cac thuoc tinh cua nhan vat
+	public string[,] getInfo(int iDCharacter){
 		return null;
 	}
 
 	// set all attribute of thi subject follow a data of character selected
-	public void setInfo(int idCharacter){
-		CharacterInfo info = new CharacterInfo ();
-		info = this.getInfo (idCharacter);
-
+	public void setAllInfo(int idCharacter){
+		string[,] info = this.getInfo (idCharacter);
+		/*
 		this.iDPlayer = info.iDPlayer;
 		this.nameCharacter = info.nameCharacter;
 		this.maxHeal = info.maxHeal;
@@ -55,6 +56,12 @@ public class CharacterInfo : MonoBehaviour {
 		this.knockAttack = info.knockAttack;
 		this.skillDamage = info.skillDamage;
 		this.knockSkill = info.knockSkill;
+		*/
+
+	}
+
+	// Change info when chacracter levelUp
+	public void setAttack(){
 
 	}
 }

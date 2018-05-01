@@ -61,7 +61,17 @@
      <Compile Include="Assets\Scripts\CharacterSelection\CharacterSelect.cs" />
      <Compile Include="Assets\Scripts\CharacterSelection\CharacterSpawn.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\Attack\AttackPlayer.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\Attack\ComboSkill.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\Attack\SkillPlayer.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\Charater\CharacterInfo.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\ComboAttack.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\PlayerAttribute.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\PlayerInfo.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\PlayerJump.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\PlayerMove.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\PlayerState.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\StringForLoad.cs" />
      <Compile Include="Assets\Scripts\ShopScripts\ShopButtonScripts.cs" />
      <Compile Include="Assets\Scripts\test.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />

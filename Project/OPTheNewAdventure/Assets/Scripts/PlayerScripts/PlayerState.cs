@@ -19,13 +19,15 @@ public class PlayerState : MonoBehaviour {
 	[SerializeField] float testTime;
 
 	// player can't control if this value > 0
-	private float frozenPlayer;
+	public static float frozenPlayer;
 
 	private Animator anim;
 	private Rigidbody2D r2;
 
-	//state of player: 0 = idel; 1 = hurt; 2 = knockdown; 3 = stand up; 
-	public static int statePlayer = 0;
+	//state of player: 0 = idel; 1 = hurt; 2 = knockdown; 3 = stand up; 4 = Skilling 
+	// State: 0 = standUp; 1 = JA; 2 = Hurt; 3 = Knock; 4 = Skill; 5 = Attack; 6 = Jump; 7 = Move; 8 = Idel 
+	// 10 = Dead
+	public static int statePlayer = 8;
 
 	const string animHurt = "Hurt";
 	const string animKnocked = "Knocked";
@@ -40,20 +42,32 @@ public class PlayerState : MonoBehaviour {
 
 	// Use this for initialization
 	void Update () {
-		
+		if (Input.GetKeyDown (KeyCode.O)) {
+			beHurt (forceHurt);
+		}
+
+		if (Input.GetKeyDown (KeyCode.P)) {
+			beKnockedDown (forcePow, forcePow2);
+		}
+
+	}
+	
+	// Update is called once per frame
+	void FixedUpdate () {
+
 		if (frozenPlayer < 0){
-			//frozenPlayer = -1;
-			if (statePlayer == 1) {
-				statePlayer = 0;
-			} else if (statePlayer == 2) {
-				if (anim.GetBool (animGround)) {
-					frozenPlayer = timeStand;
-					anim.Play ("StandUp");
-					statePlayer = 3;
-				}
+			if (statePlayer == 2) {
+				statePlayer = 8;
 			} else if (statePlayer == 3) {
-				statePlayer = 0;
-			}
+				if (anim.GetBool (animGround)) {
+					frozenPlayer = getTimeOfAnimation("StandUp");
+					Debug.Log ("StandUp = "+frozenPlayer);
+					anim.Play ("StandUp");
+					statePlayer = 0;
+				}
+			} else if (statePlayer == 0) {
+				statePlayer = 8;
+			} 
 
 			anim.SetBool (animHurt, false);
 			anim.SetBool (animKnocked, false);
@@ -64,18 +78,8 @@ public class PlayerState : MonoBehaviour {
 
 		anim.SetFloat (animFrozenPlayer, frozenPlayer);
 		frozenPlayer -= Time.deltaTime;
-	}
-	
-	// Update is called once per frame
-	void FixedUpdate () {
 
-		if (Input.GetKeyDown (KeyCode.O) && statePlayer < 2) {
-			beHurt (forceHurt);
-		}
 
-		if (Input.GetKeyDown (KeyCode.P)) {
-			beKnockedDown (forcePow, forcePow2);
-		}
 
 		if (isDead) {
 			beDead ();
@@ -90,8 +94,9 @@ public class PlayerState : MonoBehaviour {
 	void beHurt(float x){
 		if (anim.GetBool (animGround)) {
 			anim.SetBool (animHurt, true);
-			frozenPlayer = timehurt;
-			statePlayer = 1;
+			frozenPlayer = getTimeOfAnimation("Hurt");
+			Debug.Log ("Hurt =" +frozenPlayer);
+			statePlayer = 2;
 			r2.AddForce (new Vector2 (-x, 0));
 		} else {
 			beKnockedDown (x, 0f);
@@ -101,16 +106,39 @@ public class PlayerState : MonoBehaviour {
 	// if player is knocked down => call function
 	void beKnockedDown(float x, float y){
 		anim.SetBool (animKnocked, true);
-		frozenPlayer = timeKnocked;
-		statePlayer = 2;
+		frozenPlayer = getTimeOfAnimation("KnockedDown");
+		Debug.Log ("KnockedDown =" + frozenPlayer);
+		statePlayer = 3;
 		r2.AddForce (new Vector2 (-x, y));
-		//r2.velocity = new Vector2(r2.velocity.x * forcePow, r2.velocity.y * forcePow2);
 	}
 		
 	// if player dead => call function
 	void beDead(){
 		statePlayer = 10;
 		anim.SetBool (animDead, true);
+	}
+
+
+	// set state
+	public void setState(int state){
+		statePlayer = state;
+	}
+
+	// set frozenPlayer
+	public void setFrozenPlayer(float frozen){
+		frozenPlayer = frozen;
+	}
+
+	// get time of a animation by name
+	float getTimeOfAnimation(string nameOfAnim){
+		float time = 0;
+		RuntimeAnimatorController ac = anim.runtimeAnimatorController;   
+
+		for (int i = 0; i < ac.animationClips.Length; i++)
+			if (ac.animationClips[i].name == nameOfAnim)
+				time = ac.animationClips[i].length;
+
+		return time;
 	}
 
 }
