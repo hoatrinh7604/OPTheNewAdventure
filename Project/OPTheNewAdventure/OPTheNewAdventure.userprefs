@@ -1,12 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerScripts\Attack\ComboSkill.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerScripts\LevelUpSystem.cs">
     <Files>
-      <File FileName="Assets\Scripts\PlayerScripts\ComboAttack.cs" Line="16" Column="77" />
-      <File FileName="Assets\Scripts\PlayerScripts\PlayerMove.cs" Line="29" Column="39" />
-      <File FileName="Assets\Scripts\PlayerScripts\Attack\ComboSkill.cs" Line="53" Column="97" />
-      <File FileName="Assets\Scripts\PlayerScripts\PlayerState.cs" Line="32" Column="2" />
-      <File FileName="Assets\Scripts\PlayerScripts\PlayerJump.cs" Line="15" Column="34" />
+      <File FileName="Assets\Scripts\StatScripts\CreatePlayer.cs" Line="183" Column="7" />
+      <File FileName="Assets\Scripts\StatScripts\GameInfo.cs" Line="24" Column="39" />
+      <File FileName="Assets\Scripts\SaveAndLoadManager.cs" Line="113" Column="1" />
+      <File FileName="Assets\Scripts\StatScripts\BasePlayerClass.cs" Line="42" Column="15" />
+      <File FileName="Assets\Scripts\PlayerScripts\LevelUpSystem.cs" Line="40" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

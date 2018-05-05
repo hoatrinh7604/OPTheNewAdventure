@@ -1,38 +1,3 @@
-16 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\scenes\Normal Champ.tnz 
-17 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\LuffySkill\lu01.png 
-17 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\LuffySkill\lu02.png 
-17 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\LuffySkill\lu03.png 
-17 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\LuffySkill\lu04.png 
-17 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\LuffySkill\lu05.png 
-17 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\LuffySkill\lu06.png 
-17 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\LuffySkill\lu07.png 
-17 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\LuffySkill\lu08.png 
-17 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\LuffySkill\lu09.png 
-17 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\LuffySkill\lu10.png 
-17 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\LuffySkill\lu11.png 
-17 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\LuffySkill\lu12.png 
-17 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\LuffySkill\lu13.png 
-17 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\LuffySkill\luBD1.png 
-17 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\LuffySkill\luBD2.png 
-17 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\LuffySkill\luLH1.png 
-17 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\LuffySkill\luLH2.png 
-17 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\LuffySkill\luLL1.png 
-17 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\LuffySkill\luLL2.png 
-17 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\LuffySkill\luLL3.png 
-17 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\LuffySkill\luLuffy1.png 
-17 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\LuffySkill\luRH1.png 
-17 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\LuffySkill\luRH2.png 
-17 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\LuffySkill\luRL1.png 
-17 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\LuffySkill\luRL2.png 
-17 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\LuffySkill\luRL3.png 
-17 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\scenes\LuffySkill.tnz 
-17 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\scenes\Normal Champ.tnz 
-18 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\Normal Champ\zoroSS1.png 
-18 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\Normal Champ\zoroSS2.png 
-18 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\extras\Normal Champ\zoroSS3.png 
-18 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\scenes\LuffySkill.tnz 
-18 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\scenes\Normal Champ.tnz 
-19 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\scenes\Normal Champ.tnz 
 20 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\scenes\Normal Champ.tnz 
 30 4 2018 C:\OpenToonz 1.2 stuff\projects\EnemyNormal\scenes\Normal Enemy.tnz 
 30 4 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\scenes\Normal Champ.tnz 
@@ -51,5 +16,91 @@
 30 4 2018 D:\Graphic Other\Body enemy\Normal\E_TOngdong.png 
 30 4 2018 D:\Graphic Other\Body enemy\Wepton\E_W_Gay.png 
 30 4 2018 D:\Graphic Other\Body enemy\Wepton\E_W_Kiem.png 
+1 5 2018 C:\OpenToonz 1.2 stuff\projects\BossChinh\scenes\BossChinh.tnz 
+1 5 2018 C:\OpenToonz 1.2 stuff\projects\BossCon\scenes\BossCon.tnz 
+1 5 2018 C:\OpenToonz 1.2 stuff\projects\EnemyBossMedial\scenes\Medial Boss.tnz 
 1 5 2018 C:\OpenToonz 1.2 stuff\projects\EnemyNormal\scenes\Normal Enemy.tnz 
 1 5 2018 C:\OpenToonz 1.2 stuff\projects\OPChamp\scenes\Normal Champ.tnz 
+1 5 2018 D:\Final Project\Source\AI\B_BanChanTrai.png 
+1 5 2018 D:\Final Project\Source\AI\B_BapChanPhai.png 
+1 5 2018 D:\Final Project\Source\AI\B_BapChanTrai.png 
+1 5 2018 D:\Final Project\Source\AI\B_BapTayPhai.png 
+1 5 2018 D:\Final Project\Source\AI\B_BapTayTrai.png 
+1 5 2018 D:\Final Project\Source\AI\B_KhuyuChanPhai.png 
+1 5 2018 D:\Final Project\Source\AI\B_KhuyuChanTrai.png 
+1 5 2018 D:\Final Project\Source\AI\B_khuyutayPhai.png 
+1 5 2018 D:\Final Project\Source\AI\B_KhuyuTayTrai.png 
+1 5 2018 D:\Final Project\Source\AI\B_ThanDuoi.png 
+1 5 2018 D:\Final Project\Source\AI\B_ThanTren.png 
+1 5 2018 D:\Graphic Other\Body enemy\Arlong\Arlong_Dau.png 
+1 5 2018 D:\Graphic Other\Body enemy\Arlong\Arlong_Kiem.png 
+1 5 2018 D:\Graphic Other\Body enemy\Arlong\Arlong_Toc.png 
+1 5 2018 D:\Graphic Other\Body enemy\Arlong\ArlongE1_Dau.png 
+1 5 2018 D:\Graphic Other\Body enemy\Arlong\ArlongE1_Toc.png 
+1 5 2018 D:\Graphic Other\Body enemy\Arlong\ArlongE1_vay.png 
+1 5 2018 D:\Graphic Other\Body enemy\Arlong\ArlongE2_Dau.png 
+1 5 2018 D:\Graphic Other\Body enemy\BodyBoss\B_PBanchan.png 
+1 5 2018 D:\Graphic Other\Body enemy\BodyBoss\B_PBapchan.png 
+1 5 2018 D:\Graphic Other\Body enemy\BodyBoss\B_PBaptay.png 
+1 5 2018 D:\Graphic Other\Body enemy\BodyBoss\B_PKhuyutay.png 
+1 5 2018 D:\Graphic Other\Body enemy\BodyBoss\B_Pongdong.png 
+1 5 2018 D:\Graphic Other\Body enemy\BodyBoss\B_TBanchan.png 
+1 5 2018 D:\Graphic Other\Body enemy\BodyBoss\B_TBapchan.png 
+1 5 2018 D:\Graphic Other\Body enemy\BodyBoss\B_TBaptay.png 
+1 5 2018 D:\Graphic Other\Body enemy\BodyBoss\B_Thanduoi.png 
+1 5 2018 D:\Graphic Other\Body enemy\BodyBoss\B_Thantren.png 
+1 5 2018 D:\Graphic Other\Body enemy\BodyBoss\B_TKhuyutay.png 
+1 5 2018 D:\Graphic Other\Body enemy\BodyBoss\B_TOngdong.png 
+1 5 2018 D:\Graphic Other\Body enemy\BodyBoss\BC_PBanchan.png 
+1 5 2018 D:\Graphic Other\Body enemy\BodyBoss\BC_PBapchan.png 
+1 5 2018 D:\Graphic Other\Body enemy\BodyBoss\BC_PBaptay.png 
+1 5 2018 D:\Graphic Other\Body enemy\BodyBoss\BC_PKhuyutay.png 
+1 5 2018 D:\Graphic Other\Body enemy\BodyBoss\BC_POngdong.png 
+1 5 2018 D:\Graphic Other\Body enemy\BodyBoss\BC_TBanchan.png 
+1 5 2018 D:\Graphic Other\Body enemy\BodyBoss\BC_TBapchan.png 
+1 5 2018 D:\Graphic Other\Body enemy\BodyBoss\BC_TBaptay.png 
+1 5 2018 D:\Graphic Other\Body enemy\BodyBoss\BC_Thanduoi.png 
+1 5 2018 D:\Graphic Other\Body enemy\BodyBoss\BC_Thantren.png 
+1 5 2018 D:\Graphic Other\Body enemy\BodyBoss\BC_TKhuyutay.png 
+1 5 2018 D:\Graphic Other\Body enemy\BodyBoss\BC_TOngdong.png 
+1 5 2018 D:\Graphic Other\Body enemy\CP9\Blueno_Dau.png 
+1 5 2018 D:\Graphic Other\Body enemy\CP9\Kaku_Dau.png 
+1 5 2018 D:\Graphic Other\Body enemy\CP9\Kaku_Kiem.png 
+1 5 2018 D:\Graphic Other\Body enemy\CP9\Lucy_Dau.png 
+1 5 2018 D:\Graphic Other\Body enemy\Crocodile\Crocodile_Dau.png 
+1 5 2018 D:\Graphic Other\Body enemy\Crocodile\Crocodile_Tay.png 
+1 5 2018 D:\Graphic Other\Body enemy\Crocodile\Crocodile_Thuocla.png 
+1 5 2018 D:\Graphic Other\Body enemy\Crocodile\Mr1_Dau.png 
+1 5 2018 D:\Graphic Other\Body enemy\Crocodile\Mr1_Tay1.png 
+1 5 2018 D:\Graphic Other\Body enemy\Crocodile\Mr1_Tay2.png 
+1 5 2018 D:\Graphic Other\Body enemy\Crocodile\Mr1Tay1.png 
+1 5 2018 D:\Graphic Other\Body enemy\Crocodile\Mr3_Dau.png 
+1 5 2018 D:\Graphic Other\Body enemy\Enel\Enel_Daikhanquan.png 
+1 5 2018 D:\Graphic Other\Body enemy\Enel\Enel_Dau.png 
+1 5 2018 D:\Graphic Other\Body enemy\Enel\Enel_Gay.png 
+1 5 2018 D:\Graphic Other\Body enemy\Enel\Enel_Khanquan.png 
+1 5 2018 D:\Graphic Other\Body enemy\Enel\Enel_TaiPhai.png 
+1 5 2018 D:\Graphic Other\Body enemy\Enel\Enel_TaiTrai.png 
+1 5 2018 D:\Graphic Other\Body enemy\Enel\Enel_Trong.png 
+1 5 2018 D:\Graphic Other\Body enemy\Enel\Satori_CanhtraiChe.png 
+1 5 2018 D:\Graphic Other\Body enemy\Enel\Satori_Dau.png 
+1 5 2018 D:\Graphic Other\Body enemy\Enel\Satori_Than.png 
+1 5 2018 D:\Graphic Other\Body enemy\Enel\Shura_Canhphai.png 
+1 5 2018 D:\Graphic Other\Body enemy\Enel\Shura_CanhtraiChe.png 
+1 5 2018 D:\Graphic Other\Body enemy\Enel\Shura_Dau.png 
+1 5 2018 D:\Graphic Other\Body enemy\Enel\Shura_Thuong.png 
+1 5 2018 D:\Graphic Other\Body enemy\Moria\HockBack_Ao.png 
+1 5 2018 D:\Graphic Other\Body enemy\Moria\Hockback_Dau.png 
+1 5 2018 D:\Graphic Other\Body enemy\Moria\Moria_Aochoang.png 
+1 5 2018 D:\Graphic Other\Body enemy\Moria\Moria_Dau.png 
+1 5 2018 D:\Graphic Other\Body enemy\Moria\Moria_Tayphai.png 
+1 5 2018 D:\Graphic Other\Body enemy\Moria\Moria_Taytrai.png 
+1 5 2018 D:\Graphic Other\Body enemy\Moria\Perona_Dau.png 
+1 5 2018 D:\Graphic Other\Body enemy\Moria\Perona_O.png 
+1 5 2018 D:\Graphic Other\Body enemy\Moria\Perona_Tocsau.png 
+1 5 2018 D:\Graphic Other\Body enemy\Moria\Perona_Toctruoc.png 
+2 5 2018 C:\OpenToonz 1.2 stuff\projects\BossChinh\scenes\BossChinh.tnz 
+2 5 2018 C:\OpenToonz 1.2 stuff\projects\BossCon\scenes\BossCon.tnz 
+3 5 2018 C:\OpenToonz 1.2 stuff\projects\BossCon\scenes\BossCon.tnz 
+4 5 2018 C:\OpenToonz 1.2 stuff\projects\BossCon\scenes\BossCon.tnz 
+5 5 2018 C:\OpenToonz 1.2 stuff\projects\BossCon\scenes\BossCon.tnz 

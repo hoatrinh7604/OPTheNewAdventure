@@ -9,4 +9,8 @@ public class ShopButtonScripts : MonoBehaviour {
 	{
 		SceneManager.LoadScene ("CharacterMenu");
 	}
+
+	public void createCharacter(int idCharacter){
+		SaveAndLoadManager.createCharacter (idCharacter);
+	}
 }
